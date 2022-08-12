@@ -1,0 +1,18 @@
+
+.topRight{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -90px;
+}
+
+.bottomLeft{
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 400px;
+}
+
+.bottomRight{
+display: flex;
+justify-content: flex-end;
+margin-top: -95px;
+}
