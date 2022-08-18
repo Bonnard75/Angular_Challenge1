@@ -1,11 +1,12 @@
 import { Routes } from "@angular/router";
-import { SignupComponent } from "./signup/signup.component";
-import { UserProfileComponent } from "./user-profile/user-profile.component";
+import { MyFormComponent } from "./my-form/my-form.component";
+import { SignUpComponent } from "./sign-up/sign-up.component";
+
 
 const ROUTES: Routes = [
   { path: '', redirectTo: '/user-profile', pathMatch: 'full'},
-  { path: 'signup', component: SignupComponent},
-  { path: 'user-profile', component: UserProfileComponent},
+  { path: 'sign-up', component: SignUpComponent},
+  { path: 'my-form', component: MyFormComponent},
 ];
 
 export { ROUTES };
