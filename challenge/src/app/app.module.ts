@@ -1,26 +1,25 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
-import { RouterModule } from '@angular/router';
-import { CommonModule } from '@angular/common';
-
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ROUTES } from './app.routes';
-import { MyFormComponent} from './my-form/my-form.component';
-import { SignUpComponent } from './sign-up/sign-up.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { DeveloperComponentComponent } from './developer-component/developer-component.component';
+import { SkillComponentComponent } from './skill-component/skill-component.component';
+
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    MyFormComponent,
-    SignUpComponent,
+    DeveloperComponentComponent,
+    SkillComponentComponent,
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     FormsModule,
-    CommonModule,
-    RouterModule.forRoot(ROUTES)
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
