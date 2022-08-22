@@ -6,8 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Bienvenue sur le site de Swedish Boy';
-  
+  onomatopoeias: string[] = [];
+
+  onReceiveNewOnomatopia(newOnomatopeia: string) {
+    this.onomatopoeias.push(newOnomatopeia);
+  }
 }
 
 
